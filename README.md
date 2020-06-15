@@ -3,8 +3,6 @@
 Todo-Task-API
 Created Rails API to perform CRUD Operation for Todos
 
-Things you may want to cover:
-
 - Ruby version
   2.6.5
 - Rails version
@@ -12,11 +10,17 @@ Things you may want to cover:
 
 * Database creation & initialization
   Execute below command for first time.
-  This command will create database and tables.
+
+  ## This command will create database and tables.
+
   rake db:create
-  This command will execute migration files
+
+  ## This command will execute migration files
+
   rake db:migrate
-  This command will seed database with default data.
+
+  ## This command will seed database with default data.
+
   rake db:seed
 
 * How to run the test suite
