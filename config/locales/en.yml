@@ -30,4 +30,13 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    errors:
+      models:
+        todo:
+          attributes:
+            description:
+              blank: "Field Required"
+              taken: "Task Already exists"
+            status:
+              blank: "Field Required"
