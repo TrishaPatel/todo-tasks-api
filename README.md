@@ -11,20 +11,21 @@ Created Rails API to perform CRUD Operation for Todos
 * Database creation & initialization
   Execute below command for first time.
 
-  ## This command will create database and tables.
+  ### This command will create database and tables.
 
   rake db:create
 
-  ## This command will execute migration files
+  ### This command will execute migration files
 
   rake db:migrate
 
-  ## This command will seed database with default data.
+  ### This command will seed database with default data.
 
   rake db:seed
 
 * How to run the test suite
-  Wrote Model and Request Test cases for Todos API.
+
+  ### Model and Request Test cases for Todos API.
 
   bundle exec rspec
 
