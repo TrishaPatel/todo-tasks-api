@@ -3,5 +3,6 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+  Todo.create([{ description: 'Analyze Software Requirement' , status:2 },
+                { description: 'Prepare List of Question', status: 1 },
+                { description: 'Discuss Questions and Suggestions with Team Member', status: 0 }])

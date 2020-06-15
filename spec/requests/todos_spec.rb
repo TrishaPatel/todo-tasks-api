@@ -82,17 +82,17 @@ RSpec.describe 'Todos API', type: :request do
 
   # Test suite for PUT /todos/:id
   describe 'PUT /todos/:id' do
-    let(:valid_attributes) { { descriptio: 'Shopping' } }
+    let(:valid_attributes) { { todo: { description: 'Shopping' } } }
 
     context 'when the record exists' do
       before { put "/todos/#{todo_id}", params: valid_attributes }
 
       it 'updates the record' do
-        expect(response.body).to be_empty
+        expect(json['description']).to eq('Shopping')
       end
 
-      it 'returns status code 204' do
-        expect(response).to have_http_status(204)
+      it 'returns status code 200' do
+        expect(response).to have_http_status(200)
       end
     end
   end
@@ -101,8 +101,8 @@ RSpec.describe 'Todos API', type: :request do
   describe 'DELETE /todos/:id' do
     before { delete "/todos/#{todo_id}" }
 
-    it 'returns status code 204' do
-      expect(response).to have_http_status(204)
+    it 'returns status code 200' do
+      expect(response).to have_http_status(200)
     end
   end
 end
